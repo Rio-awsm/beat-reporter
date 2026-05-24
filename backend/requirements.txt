@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+openai           # used for all OpenAI-compatible providers
+chromadb
+tavily-python
+httpx            # for Jina (no SDK)
+tenacity          # retry helpers
+python-multipart

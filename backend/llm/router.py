@@ -24,10 +24,11 @@ PROVIDER_CONFIG = {
 # VERIFY MODEL IDS — they rotate.
 AGENT_CHAINS: dict[str, list[tuple[Provider, str]]] = {
     "reporter": [
-        (Provider.OPENROUTER,   "openrouter/owl-alpha"),
+        (Provider.OPENROUTER, "nvidia/nemotron-3-super-120b-a12b:free"),
         (Provider.CEREBRAS,   "llama3.1-8b"),
         (Provider.SAMBANOVA,  "Meta-Llama-3.3-70B-Instruct"),
-        (Provider.OPENROUTER, "nvidia/nemotron-3-super-120b-a12b:free"),
+        (Provider.OPENROUTER,   "openrouter/owl-alpha"),
+        
     ],
     "factchecker": [
         (Provider.GROQ,       "llama-3.3-70b-versatile"),
